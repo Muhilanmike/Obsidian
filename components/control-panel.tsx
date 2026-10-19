@@ -146,7 +146,7 @@ export function ControlPanel({
 
           <div>
             <label htmlFor="ports" className={labelClass}>
-              TCP Ports
+              TCP Ports <span className="normal-case tracking-normal text-slate-500">(optional)</span>
             </label>
             <input
               id="ports"
