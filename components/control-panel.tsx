@@ -47,12 +47,12 @@ export function ControlPanel({
   const [targetHost, setTargetHost] = useState('')
   const [ports, setPorts] = useState('')
   const [profile, setProfile] = useState<'web' | 'top1000' | 'full' | 'custom'>('custom')
-  const [minSeverity, setMinSeverity] = useState('HIGH')
+  const [minSeverity, setMinSeverity] = useState('NONE')
 
   // Version CVE Check Form State
   const [product, setProduct] = useState('')
   const [version, setVersion] = useState('')
-  const [lookupSeverity, setLookupSeverity] = useState('HIGH')
+  const [lookupSeverity, setLookupSeverity] = useState('NONE')
   const [isLookingUp, setIsLookingUp] = useState(false)
   const [lookupChecked, setLookupChecked] = useState(false)
   const [lookupMatches, setLookupMatches] = useState<CveFinding[]>([])
