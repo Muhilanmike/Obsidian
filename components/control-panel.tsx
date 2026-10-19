@@ -5,6 +5,7 @@ import { Crosshair, Loader2, RefreshCw, Search, ShieldCheck, Sparkles } from 'lu
 import { cn } from '@/lib/utils'
 import { lookupVulnerabilities, type CveFinding } from '@/lib/scan-data'
 import { Pill, SeverityBadge, StatusDot } from '@/components/severity-badge'
+import { ObsidianSelect } from '@/components/obsidian-select'
 
 export type ScanPhase = 'idle' | 'scanning' | 'complete'
 
@@ -23,6 +24,14 @@ const inputClass =
   'w-full rounded-xl border border-white/10 bg-black/50 px-4 py-2.5 font-mono text-sm text-white placeholder:text-slate-500 outline-none transition-colors focus:border-amber-500 focus:ring-2 focus:ring-amber-500/20'
 
 const labelClass = 'mb-1.5 block text-xs font-medium uppercase tracking-[0.14em] text-slate-400'
+
+const SEVERITY_OPTIONS = [
+  { value: 'NONE', label: 'ALL / NONE' },
+  { value: 'LOW', label: 'LOW+' },
+  { value: 'MEDIUM', label: 'MEDIUM+' },
+  { value: 'HIGH', label: 'HIGH+' },
+  { value: 'CRITICAL', label: 'CRITICAL' },
+]
 
 export function ControlPanel({
   phase,
@@ -157,18 +166,12 @@ export function ControlPanel({
             <label htmlFor="min-severity" className={labelClass}>
               Min Severity
             </label>
-            <select
+            <ObsidianSelect
               id="min-severity"
               value={minSeverity}
-              onChange={(e) => setMinSeverity(e.target.value)}
-              className={inputClass}
-            >
-              <option value="NONE">ALL / NONE</option>
-              <option value="LOW">LOW+</option>
-              <option value="MEDIUM">MEDIUM+</option>
-              <option value="HIGH">HIGH+</option>
-              <option value="CRITICAL">CRITICAL</option>
-            </select>
+              onChange={setMinSeverity}
+              options={SEVERITY_OPTIONS}
+            />
           </div>
         </div>
 
@@ -337,21 +340,15 @@ export function ControlPanel({
               <label htmlFor="lookup-severity" className={labelClass}>
                 Min Severity
               </label>
-              <select
+              <ObsidianSelect
                 id="lookup-severity"
                 value={lookupSeverity}
-                onChange={(e) => {
-                  setLookupSeverity(e.target.value)
+                onChange={(next) => {
+                  setLookupSeverity(next)
                   setLookupChecked(false)
                 }}
-                className={inputClass}
-              >
-                <option value="NONE">ALL / NONE</option>
-                <option value="LOW">LOW+</option>
-                <option value="MEDIUM">MEDIUM+</option>
-                <option value="HIGH">HIGH+</option>
-                <option value="CRITICAL">CRITICAL</option>
-              </select>
+                options={SEVERITY_OPTIONS}
+              />
             </div>
           </div>
 
