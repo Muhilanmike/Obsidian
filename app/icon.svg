@@ -1,0 +1,18 @@
+<svg width="180" height="180" viewBox="0 0 180 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Rounded obsidian background -->
+  <rect width="180" height="180" rx="36" fill="#090a0f" stroke="#27272a" stroke-width="4"/>
+  <circle cx="90" cy="90" r="72" fill="#f59e0b" fill-opacity="0.06"/>
+  
+  <!-- Outer radar pulse rings -->
+  <circle cx="90" cy="86" r="48" stroke="#f59e0b" stroke-opacity="0.25" stroke-width="2" stroke-dasharray="4 4"/>
+  <circle cx="90" cy="86" r="32" stroke="#f59e0b" stroke-opacity="0.4" stroke-width="2"/>
+  
+  <!-- Cyber Security Shield -->
+  <path d="M90 38L126 54V86C126 109.2 110.8 130.6 90 138C69.2 130.6 54 109.2 54 86V54L90 38Z" 
+        fill="#0f1117" stroke="#f59e0b" stroke-width="5" stroke-linejoin="round"/>
+  
+  <!-- Center Target / Crosshair Emblem -->
+  <circle cx="90" cy="86" r="14" fill="#f59e0b" fill-opacity="0.2" stroke="#fbbf24" stroke-width="3"/>
+  <circle cx="90" cy="86" r="5" fill="#f59e0b"/>
+  <path d="M90 66V74M90 98V106M70 86H78M102 86H110" stroke="#f59e0b" stroke-width="3" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,30 @@
+.swarm-cursor {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: #050505 !important;
+}
+
+.swarm-cursor-canvas {
+  position: absolute;
+  inset: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  background-color: transparent !important;
+  z-index: 0 !important;
+}
+
+.swarm-cursor-content {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent !important;
+  z-index: 10 !important;
+  pointer-events: auto !important;
+}
