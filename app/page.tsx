@@ -161,7 +161,7 @@ export default function LandingPage() {
 
             {/* Cinematic Typography */}
             <h1 className="text-4xl sm:text-6xl md:text-7xl font-bold tracking-tight text-white mb-6 leading-[1.08]">
-              Autonomous Vulnerability Verification{' '}
+              Vulnerability Verification{' '}
               <span className="bg-gradient-to-r from-amber-400 via-amber-500 to-orange-500 bg-clip-text text-transparent">
                 &amp;
               </span>{' '}
@@ -170,9 +170,9 @@ export default function LandingPage() {
 
             {/* Sub-description */}
             <p className="text-base sm:text-lg text-slate-400 max-w-2xl mb-10 leading-relaxed font-normal">
-              Cinematic obsidian-themed security posture auditor powered by real-time{' '}
-              <span className="text-amber-400/90 font-medium">NVD 2.0</span> &amp;{' '}
-              <span className="text-amber-400/90 font-medium">CVE.org</span> correlation, live port auditing, and TLS header inspection.
+              Obsidian is a security auditor for authorized networks. It finds exposed services with Nmap, matches them to known vulnerabilities from{' '}
+              <span className="text-amber-400/90 font-medium">NVD</span> and{' '}
+              <span className="text-amber-400/90 font-medium">CVE.org</span> with confidence ratings, and shows the results in a dashboard with a security grade and an exportable report.
             </p>
 
             {/* Action Buttons */}
