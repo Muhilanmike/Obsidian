@@ -36,8 +36,8 @@ export function ControlPanel({
 }: Props) {
   // Network Reconnaissance Form State
   const [targetHost, setTargetHost] = useState('')
-  const [ports, setPorts] = useState('80,443')
-  const [profile, setProfile] = useState<'web' | 'top1000' | 'full' | 'custom'>('web')
+  const [ports, setPorts] = useState('')
+  const [profile, setProfile] = useState<'web' | 'top1000' | 'full' | 'custom'>('custom')
   const [minSeverity, setMinSeverity] = useState('HIGH')
 
   // Version CVE Check Form State
@@ -97,7 +97,7 @@ export function ControlPanel({
           e.preventDefault()
           onScan({
             target: targetHost.trim(),
-            ports: ports.trim(),
+            ports: ports.trim() || '80,443',
             min_severity: minSeverity,
           })
         }}
@@ -150,7 +150,6 @@ export function ControlPanel({
               placeholder="80,443"
               autoComplete="off"
               spellCheck={false}
-              required
             />
           </div>
 
