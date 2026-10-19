@@ -16,7 +16,7 @@ const jetbrainsMono = JetBrains_Mono({
 })
 
 export const metadata: Metadata = {
-  title: 'NetSec Obsidian — Cinematic Auditor',
+  title: 'Obsidian — Cinematic Auditor',
   description:
     'Security posture and vulnerability auditor dashboard: network reconnaissance, NVD-verified CVE matching, HTTP security header grading, and TLS certificate inspection.',
   icons: {

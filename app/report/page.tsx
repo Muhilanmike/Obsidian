@@ -3,7 +3,7 @@ import { SiteNav } from '@/components/site-nav'
 import { ReportView } from '@/components/report-view'
 
 export const metadata: Metadata = {
-  title: 'Export Report — NetSec Obsidian',
+  title: 'Export Report — Obsidian',
   description: 'Executive summary and full technical appendix of the latest security posture scan.',
 }
 

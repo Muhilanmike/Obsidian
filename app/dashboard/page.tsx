@@ -3,7 +3,7 @@ import { Dashboard } from '@/components/dashboard'
 import { SiteNav } from '@/components/site-nav'
 
 export const metadata: Metadata = {
-  title: 'Dashboard — NetSec Obsidian',
+  title: 'Dashboard — Obsidian',
   description: 'Live vulnerability scanning dashboard with real-time CVE correlation, port auditing, and posture analysis.',
 }
 

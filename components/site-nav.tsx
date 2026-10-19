@@ -24,7 +24,7 @@ export function SiteNav() {
           </span>
           <span className="flex flex-col leading-none">
             <span className="text-sm font-bold tracking-tight text-white group-hover:text-amber-400 transition-colors">
-              NETSEC <span className="text-amber-500 font-normal italic">Obsidian</span>
+              Obsidian
             </span>
             <span className="mt-1 flex items-center gap-1.5 font-mono text-[10px] uppercase tracking-[0.2em] text-slate-400">
               <StatusDot /> Telemetry live

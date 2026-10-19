@@ -74,10 +74,7 @@ export default function LandingPage() {
               <Shield className="size-4 text-amber-400" />
             </span>
             <span className="text-sm font-bold tracking-tight text-white group-hover:text-amber-400 transition-colors">
-              NETSEC{' '}
-              <span className="font-normal italic text-amber-500">
-                Obsidian
-              </span>
+              Obsidian
             </span>
           </Link>
 
@@ -383,11 +380,7 @@ export default function LandingPage() {
         <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-4 px-6 md:flex-row">
           <div className="flex items-center gap-2.5 text-sm text-slate-500">
             <Shield className="size-4 text-amber-500/60" />
-            <span>
-              NetSec{' '}
-              <span className="italic text-amber-500/60">Obsidian</span> —
-              Cinematic Auditor
-            </span>
+            <span>Obsidian — Cinematic Auditor</span>
           </div>
           <div className="flex items-center gap-6 font-mono text-[11px] uppercase tracking-[0.15em] text-slate-600">
             <Link href="/dashboard" className="transition-colors hover:text-slate-400">
